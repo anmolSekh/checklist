@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS logins (
 );
 
 CREATE TABLE IF NOT EXISTS checklists (
-    check_id SERIAL PRIMARY KEY,,
+    check_id SERIAL PRIMARY KEY,
     user_id INT references logins(user_id),
     title VARCHAR(255),
     create_date DATE DEFAULT CURRENT_DATE
