@@ -1,9 +1,3 @@
-CREATE DATABASE checklistdb
-    WITH
-    OWNER = postgres;
-
-\c checklistdb
-
 CREATE TABLE IF NOT EXISTS logins (
     user_id SERIAL PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
